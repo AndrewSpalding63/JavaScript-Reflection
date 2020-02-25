@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/linearicons@1.0.2/dist/web-font/style.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js">
+    </script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="web-page" style="height: 100%;position: relative;overflow: hidden;">
+        
+        <!-- MAIN CONTAINER HERE -->
+        <div class="main-container" onclick="closeSideBar()" style="height: 100%;overflow: hidden;">
+            
+            <div class="main-outer" style="height: 100%;overflow: auto;">
+               
+                <header class="header">
+
+                    <!-- topbar starts here -->
+                    <div class="topbar wrapper">
+                        
+                        <ul class="flex-container nowrap" style="border: 0px; justify-content: space-between;">
+                            <li class="image-logo">
+                                <a href="#">
+                                    <img src="./Assets/Logo.png" class="logo-image" alt="logo">
+                                </a>
+                            </li>
+                            <li class="flex-container nowrap" style="border: 0px;padding: 6px;">
+                                <span class="text-uppercase topbar-support">
+                                    <a href="#">
+                                        <span><i class="fas fa-mouse" style="padding-right: 5px;"></i></span>
+                                        <span>Support</span>
+                                    </a>
+                                </span>
+                                <span class="text-uppercase d-lg-none">
+                                    <a href="#">
+                                        <img class="phone-icon" src="./Assets/phone_in_talk_black_48x48.png" alt="Call">
+                                    </a>
+                                </span>
+
+                                <span class="text-uppercase topbar-contact">
+                                    <a href="#">
+                                        <span><i class="far fa-paper-plane" style="padding-right: 5px;"></i></span>
+                                        <span>Contact</span>
+                                    </a>
+                                </span>
+                                <span id="main-menu" class="text-uppercase topbar-menu">
+                                    <span>
+                                        <div class="toggle-wrap" style="color: white;">
+                                            <span class="toggle-bar"></span>
+                                        </div>
+                                        <span class="text text-white">MENU</span>
+
+                                    </span>
+                                </span>
+
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- navbar starts here -->
+                    <div class="navbar">
+                        <div class="wrapper">
+                            <ul class="flex-container nowrap" style="padding: 0;">
+                                <li class="flex-item list-design navbar-items">
+                                    <a href="#" class="text-uppercase">
+                                        <span class="lnr navbar-icon lnr-code" style="color: #926fb1;"></span>
+                                        <span class="first-span"><small>web</small></span>
+                                        <span class="second-span">Design</span>
+                                    </a>
+
+                                    <!-- On hover div element here -->
+                                    <div class="navbar-on-hover bar-design">
+                                        <div class="flex-container new-bar-wrapper dropdown-bar">
+                                            <div>
+                                                <a href="#">Stylish websites</a>
+                                            </div>
+                                            <div class="dash-list">-</div>
+                                            <div>
+                                                <a href="">ecommerce stores</a>
+                                            </div>
+                                            <div class="dash-list">-</div>
+                                            <div>
+                                                <a href="#">branding</a>
+                                            </div>
+                                            <div class="dash-list">-</div>
+                                            <div>
+                                                <a href="#">mobile apps</a>
+                                            </div>
+                                            <div class="dash-list">-</div>
+                                            <div>
+                                                <a href="#">web hosting</a>
+                                            </div>
+                                            <div class="dash-list">-</div>
+                                            <div>
+                                                <a href="#">pay monthly websites</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="flex-item list-support navbar-items">
+                                    <a href="#" class="text-uppercase">
+                                        <span class="lnr navbar-icon lnr-screen" style="color: #4183d7;"></span>
+                                        <span class="first-span"><small>IT</small></span>
+                                        <span class="second-span">Support</span>
+                                    </a>
+                                    <!-- On hover div element here -->
+
+                                    <div class="navbar-on-hover bar-support">
+                                        <div class="flex-container new-bar-wrapper dropdown-bar">
+                                            <div>
+                                                <a href="#">MANAGED IT SUPPORT</a>
+                                            </div>
+                                            <div class="dash-list">-</div>
+                                            <div>
+                                                <a href="">BUSINESS IT SUPPORT</a>
+                                            </div>
+                                            <div class="dash-list">-</div>
+                                            <div>
+                                                <a href="#">OFFICE 365</a>
+                                            </div>
+                                            <div class="dash-list">-</div>
+                                            <div>
+                                                <a href="#">CONSULTANCY</a>
+                                            </div>
+                                            <div class="dash-list">-</div>
+                                            <div>
+                                                <a href="#">CLOUD PROVIDER</a>
+                                            </div>
+                                            <div class="dash-list">-</div>
+                                            <div>
+                                                <a href="#">DATA BACKUP</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="flex-item list-telecoms navbar-items">
+                                    <a href="#" class="text-uppercase">
+                                        <i class="fas navbar-icon fa-phone-volume" style="color: #d64541;"></i>
+                                        <span class="first-span"><small>telecoms</small></span>
+                                        <span class="second-span">services</span>
+                                    </a>
+                                    <!-- On hover div element here -->
+                                    <div class="navbar-on-hover bar-services">
+                                        <div class="flex-container new-bar-wrapper dropdown-bar">
+                                            <div>
+                                                <a href="#">GIGABIT VOUCHER</a>
+                                            </div>
+                                            <div class="dash-list">-</div>
+                                            <div>
+                                                <a href="">HOSTED VOIP</a>
+                                            </div>
+                                            <div class="dash-list">-</div>
+                                            <div>
+                                                <a href="#">BUSINESS VOIP</a>
+                                            </div>
+                                            <div class="dash-list">-</div>
+                                            <div>
+                                                <a href="#">BUSINESS BROADBAND</a>
+                                            </div>
+                                            <div class="dash-list">-</div>
+                                            <div>
+                                                <a href="#">LEASED LINE</a>
+                                            </div>
+                                            <div class="dash-list">-</div>
+                                            <div>
+                                                <a href="#">3CX SYSTEMS</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li class="flex-item list-software navbar-items">
+                                    <a href="#" class="text-uppercase">
+                                        <img src="./Assets/white.png" class="white" alt="bespoke icon">
+                                        <img src="./Assets/light_grey.png" class="grey" alt="bespoke icon">
+                                        <span class="first-span"><small>bespoke</small></span>
+                                        <span class="second-span">software</span>
+                                    </a>
+                                    <!-- On hover div element here -->
+                                    <div class="navbar-on-hover bar-software">
+                                        <div class="flex-container new-bar-wrapper dropdown-bar">
+                                            <div>
+                                                <a href="#">WORKFLOW SOLUTIONS</a>
+                                            </div>
+                                            <div class="dash-list">-</div>
+                                            <div>
+                                                <a href="">AUTOMATION</a>
+                                            </div>
+                                            <div class="dash-list">-</div>
+                                            <div>
+                                                <a href="#">SYSTEM INTEGRATION</a>
+                                            </div>
+                                            <div class="dash-list">-</div>
+                                            <div>
+                                                <a href="#">DATABASE MANAGEMENT</a>
+                                            </div>
+                                            <div class="dash-list">-</div>
+                                            <div>
+                                                <a href="#">SHAREPOINT</a>
+                                            </div>
+                                            <div class="dash-list">-</div>
+                                            <div>
+                                                <a href="#">ERP</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="flex-item list-marketing navbar-items">
+                                    <a href="#" class="text-uppercase">
+                                        <i class="fas navbar-icon fa-chart-bar" style="color: #2ecc71;"></i>
+                                        <span class="first-span"><small>digital</small></span>
+                                        <span class="second-span">marketing</span>
+                                    </a>
+                                    <!-- On hover div element here -->
+                                    <div class="navbar-on-hover bar-marketing">
+                                        <div class="flex-container new-bar-wrapper dropdown-bar">
+                                            <div>
+                                                <a href="#">SEO</a>
+                                            </div>
+                                            <div class="dash-list">-</div>
+                                            <div>
+                                                <a href="">PPC</a>
+                                            </div>
+                                            <div class="dash-list">-</div>
+                                            <div>
+                                                <a href="#">CRO</a>
+                                            </div>
+                                            <div class="dash-list">-</div>
+                                            <div>
+                                                <a href="#">EMAIL</a>
+                                            </div>
+                                            <div class="dash-list">-</div>
+                                            <div>
+                                                <a href="#">SOCIAL</a>
+                                            </div>
+                                            <div class="dash-list">-</div>
+                                            <div>
+                                                <a href="#">CONTENT</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="flex-item list-security navbar-items">
+                                    <a href="#" class="text-uppercase">
+                                        <i class="fas navbar-icon fa-shield-alt" style="color: #f62459;"></i>
+                                        <span class="first-span"><small>cyber</small></span>
+                                        <span class="second-span">security</span>
+                                    </a>
+                                    <!-- On hover div element here -->
+                                    <div class="navbar-on-hover bar-security">
+                                        <div class="flex-container new-bar-wrapper dropdown-bar">
+                                            <div>
+                                                <a href="#">ASSESSMENT</a>
+                                            </div>
+                                            <div class="dash-list">-</div>
+                                            <div>
+                                                <a href="">MANAGEMENT</a>
+                                            </div>
+                                            <div class="dash-list">-</div>
+                                            <div>
+                                                <a href="#">PENETRATION TESTING</a>
+                                            </div>
+                                            <div class="dash-list">-</div>
+                                            <div>
+                                                <a href="#">CYBER ESSENTIALS</a>
+                                            </div>
+                                            <div class="dash-list">-</div>
+                                            <div>
+                                                <a href="#">PCI/DSS</a>
+                                            </div>
+                                            <div class="dash-list">-</div>
+                                            <div>
+                                                <a href="#">HACKER PREVENTION</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+
+                </header>
+
+                <!-- cover image div -->
+                <div class="basic">
+                    <div class="cover">
+                        <div class="cover-image cover-image-1">
+                            
+
+                            <div class="wrapper">
+                                <div class="typo">
+                                    <h1 class="text-uppercase cover-heading">Web Design</h1>
+                                    <div class="text-over-cover-image">
+                                        <p>For businesses looking to make a strong </p>
+                                        <p>and effective first impression.</p>
+                                        <button class="text-uppercase btn-web"><span class="text-white"
+                                                style="text-decoration: none;">Find
+                                                out more <span class="lnr lnr-arrow-right"></span></span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cover-image cover-image-2">
+                        
+
+                        <div class="wrapper">
+                            <div class="typo">
+                                <h1 class="text-uppercase cover-heading">It Support</h1>
+                                <div class="text-over-cover-image">
+                                    <p>Fast and cost-effective IT support</p>
+                                    <p>services for your business</p>
+                                    <button class="text-uppercase btn-it"><span class="text-white"
+                                            style="text-decoration: none;">Find
+                                            out more <span class="lnr lnr-arrow-right"></span></span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cover-image cover-image-3">
+                        
+                        <div class="wrapper">
+                            <div class="typo">
+                                <h1 class="text-uppercase cover-heading">Telecoms Services</h1>
+                                <div class="text-over-cover-image">
+                                    <p>A new approach to connectivity, see how </p>
+                                    <p>we can help your business.</p>
+                                    <button class="text-uppercase btn-telecoms"><span class="text-white"
+                                            style="text-decoration: none;">Find
+                                            out more <span class="lnr lnr-arrow-right"></span></span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cover-image cover-image-4">
+                        
+
+                        <div class="wrapper">
+                            <div class="typo">
+                                <h1 class="text-uppercase cover-heading">Bespoke Software</h1>
+                                <div class="text-over-cover-image">
+                                    <p>Bring your business together</p>
+                                    <p>Bring your business together</p>
+                                    <button class="text-uppercase btn-bespoke"><span class="text-white"
+                                            style="text-decoration: none;">Find
+                                            out more <span class="lnr lnr-arrow-right"></span></span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cover-image cover-image-5">
+                        
+                        <div class="wrapper">
+                            <div class="typo">
+                                <h1 class="text-uppercase cover-heading">Digital Marketing</h1>
+                                <div class="text-over-cover-image">
+                                    <p>Bring your business together</p>
+                                    <p>Bring your business together</p>
+                                    <button class="text-uppercase btn-digital"><span class="text-white"
+                                            style="text-decoration: none;">Bring your business together <span class="lnr lnr-arrow-right"></span></span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cover-image cover-image-6">
+                        
+                        <div class="wrapper">
+                            <div class="typo">
+                                <h1 class="text-uppercase cover-heading">Cyber Security</h1>
+                                <div class="text-over-cover-image">
+                                    <p>Keeping businesses and their customers</p>
+                                    <p>sensitive information protected.</p>
+                                    <button class="text-uppercase btn-cyber"><span class="text-white"
+                                            style="text-decoration: none;">Find
+                                            out more <span class="lnr lnr-arrow-right"></span></span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Main section or middle area -->
+                <main class="wrapper">
+                        <div class="flex-container first-section" style="margin: 3rem 0;justify-content: space-between;">
+                        <div class="text-center item-two web-design">
+                            <a href="#">
+                                <div>
+                                    <span class="main-content-icons-lnr">
+                                        <span class="lnr lnr-code"></span>
+                                    </span>
+                                </div>
+                                <div class="main-text text-black">Web Design</div>
+                                <!-- style hr element using border-top or border-bottom properties -->
+                                <hr style="border-top: 3px solid black; width: 30px;">
+                                <div class="para-text">User-centric design for businesses looking to make a lasting
+                                    first impression
+                                    and drive conversions</div>
+                                <div class="main-text btn main-text-btn" style="display: inline-block;">READ MORE</div>
+                            </a>
+                        </div>
+                        <div class="text-center item-two it-support">
+                            <a href="#">
+                                <div>
+                                    <span class="main-content-icons-lnr">
+                                        <span class="lnr lnr-screen"></span>
+                                    </span>
+                                </div>
+                                <div class="main-text text-black">IT Support</div>
+                                <hr style="border-top: 3px solid black; width: 30px;">
+                                <div class="para-text">Remotely managed IT services that is catered to your businesses
+                                    needs, adds
+                                    value and reduces costs.</div>
+                                <div class="main-text btn main-text-btn" style="display: inline-block;">READ MORE</div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <!-- Second Section here -->
+                    <div class="flex-container second-section" style="margin: 3rem 0;justify-content: space-between;">
+                        <div class="text-center item-four telecoms-services">
+                            <a href="#">
+                                <div>
+                                    <span class="main-content-icons-fas"><i class="fas fa-phone-volume"></i></span>
+                                </div>
+                                <div class="main-text text-black">Telecoms Services</div>
+                                <!-- style hr element using border-top or border-bottom properties -->
+                                <hr style="border-top: 3px solid black; width: 30px;">
+                                <div class="para-text">Stay connected with bespoke telecoms solutions when you need it
+                                    most.</div>
+                                <div class="main-text btn main-text-btn" style="display: inline-block;">READ MORE</div>
+                            </a>
+                        </div>
+
+                        <div class="text-center item-four bespoke-software">
+                            <a href="#">
+                                <div>
+                                    <span class="main-content-icons-fas">
+                                        <img src="./Assets/light_grey.png" class="grey" alt="bespoke-software">
+                                        <img src="./Assets/white.png" class="white" alt="bespoke-software">
+                                    </span>
+                                </div>
+                                <div class="main-text text-black">Bespoke Software</div>
+                                <hr style="border-top: 3px solid black; width: 30px;">
+                                <div class="para-text">Tailored software solutions to improve business productivity and
+                                    online
+                                    profits.</div>
+                                <div class="main-text btn main-text-btn" style="display: inline-block;">READ MORE</div>
+                            </a>
+                        </div>
+
+                        <div class="text-center item-four digital-marketing">
+                            <a href="#">
+                                <div>
+                                    <span class="main-content-icons-fas">
+                                        <i class="fas fa-chart-bar"></i>
+                                    </span>
+                                </div>
+                                <div class="main-text text-black">Digital Marketing</div>
+                                <!-- style hr element using border-top or border-bottom properties -->
+                                <hr style="border-top: 3px solid black; width: 30px;">
+                                <div class="para-text">Driving brand awareness and ROI through creative digital
+                                    marketing campaigns.
+                                </div>
+                                <div class="main-text btn main-text-btn" style="display: inline-block;">READ MORE</div>
+                            </a>
+                        </div>
+
+                        <div class="text-center item-four cuber-sucurity">
+                            <a href="#">
+                                <div>
+                                    <span class="main-content-icons-fas">
+                                        <i class="fas fa-shield-alt"></i>
+                                    </span>
+                                </div>
+                                <div class="main-text text-black">Cyber Security</div>
+                                <hr style="border-top: 3px solid black; width: 30px;">
+                                <div class="para-text">
+                                    Ensuring your online business stays secure 24/7, 365 days of the year.</div>
+                                <div class="main-text btn main-text-btn" style="display: inline-block;">READ MORE</div>
+                            </a>
+                        </div>
+
+                    </div>
+
+
+                </main>
+
+                <!-- third Section here -->
+                <div class="third-section">
+                    <div class="wrapper">
+                        <div class="third-section-width" style="padding: 50px 0px; width: 48%; word-spacing: 4px;">
+                            <h1 style="margin:0px">NETMATTERS</h1>
+                            <p style="font-weight: bold;">Netmatters Ltd is a leading web design, IT support and digital
+                                marketing
+                                agency based in Wymondham, Norfolk.</p>
+                            <p style="padding: 15px 0px;">Founded in 2008, we work with businesses from a variety of
+                                industries to
+                                gain new prospects, nurture existing leads and further grow their sales.</p>
+                            <p>We provide cost effective, reliable solutions to a range of services; from bespoke
+                                cloud-based
+                                management systems, workflow and IT solutions through to creative website development
+                                and integrated
+                                digital campaigning.</p>
+                            <button class="btn cover-image-btn" style="margin-top: 10px;">
+                                <span style="color: #333645;background-color: #fff;text-decoration: none;">OUR CULTURE
+                                    <span class="lnr lnr-arrow-right"></span>
+                                </span>
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wrapper" style='box-shadow: 0 5px 35px rgba(0,0,0,0.1);'>
+
+                    <div class="div" style='padding: 3rem 0;'>
+                        <span class="text-uppercase latest">latest</span>
+                    </div>
+
+                </div>
+
+                <!-- Main section here    -->
+                <div>
+                    <div class="wrapper" style="padding-bottom: 4rem;box-shadow: 0 5px 35px rgba(0,0,0,0.1);">
+                        <!-- section four here -->
+                        <div class="flex-container fourth-section"
+                            style="justify-content: space-between;margin: 3rem 0;">
+                            <div class="text-left item-three image-1">
+                                <div class="main-image-div"><img src="./Assets/Footer_image-1.jpg" class="main-image"
+                                        alt="birthdays"></div>
+                                <div class="content-below-image" style="box-shadow: 0 3px 35px rgba(0,0,0,0.1);">
+                                    <div class="mb-ipad-pro" style="margin-bottom: 26px;">
+                                        <a href="#" class="text-size main-text">
+                                            Happy 40th Birthday Chris!
+                                        </a>
+                                    </div>
+                                    <div class="text-para">Happy 40th Birthday Chris! The celebration of big birthdays
+                                        is a huge
+                                        thing for us at Netmatters. O...</div>
+                                    <button class="btn text-size"><span>READ MORE</span></button>
+                                    <!-- style hr element using border-top or border-bottom properties -->
+                                    <hr style="margin: 30px 0px;">
+                                    <div class="flex-container">
+                                        <span>
+                                            <img src="./Assets/footer_image_icon-1.png" alt="img">
+                                        </span>
+                                        <span style="margin-left: 25px;">
+                                            <span>Posted by Netmatters Ltd</span>
+                                            <span>
+                                                12th December 2019
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="text-left item-three image-2">
+                                <div class="main-image-div"><img src="./Assets/Footer_image-2.jpg" class="main-image"
+                                        alt="Web development"></div>
+                                <div class="content-below-image" style="box-shadow: 0 3px 35px rgba(0,0,0,0.1);">
+                                    <div>
+                                        <a href="#" class="text-size main-text">
+                                            Your New Career in Web Development: Apply Now
+                                        </a>
+                                    </div>
+
+                                    <div class="text-para">With an ever-increasing number of jobs on offer it won't
+                                        surprise you to
+                                        learn that the average pe...</div>
+                                    <button class="btn text-size"><span>READ MORE</span></button>
+                                    <hr style="margin: 30px 0px;">
+                                    <div class="flex-container">
+                                        <span>
+                                            <img src="./Assets/footer_image_icon-1.png" alt="img">
+                                        </span>
+                                        <span style="margin-left: 25px;">
+                                            <span>Posted by Netmatters Ltd</span>
+                                            <span>
+                                                12th December 2019
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="text-left item-three image-3">
+                                <div class="main-image-div"><img src="./Assets/Footer_image-3.jpg" class="main-image"
+                                        alt="Business development"></div>
+                                <div class="content-below-image" style="box-shadow: 0 3px 35px rgba(0,0,0,0.1);">
+                                    <div>
+                                        <a href="#" class="text-size main-text">
+                                            Business Development / Account Manager
+                                        </a>
+                                    </div>
+                                    <div class="text-para">Salary: £30k+ per annum + Bonus + Car Allowance + Benefits
+                                        Hours: 40
+                                        hours per week, Mond...</div>
+                                    <button class="btn text-size"><span>READ MORE</span></button>
+                                     <hr style="margin: 30px 0px;">
+                                    <div class="flex-container">
+                                        <span>
+                                            <img style="border-radius: 50%;" src="./Assets/Footer_image_icon_3.jpg"
+                                                alt="img">
+                                        </span>
+                                        <span style="margin-left: 25px;">
+                                            <span>Posted by Netmatters Ltd</span>
+                                            <span>
+                                                12th December 2019
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="wrapper d-none d-md-block" style="margin-top: 3rem;">
+                        <div class="flex-container fifth-section"
+                            style="justify-content: space-between; margin-bottom: 4rem;">
+                            <div class="text-center footer-icon-images image-1">
+                                <img src="./Assets/footer_base_image-1_prime.jpg" class="prime" alt="busseys">
+                                <img src="./Assets/footer_base_image-1.jpg" class="normal" alt="busseys">
+                                <div id="busseys" class="tooltip"
+                                    style="position: relative;background-color: #333645;margin-top: -17.8rem;color: white;width: 260px;">
+                                    <h3 style="font-weight: normal;">Bussey's</h3>
+                                    <div class="text-center">
+                                        <hr style="border: 2px solid white; width: 30px;">
+                                    </div>
+                                    <p style="font-weight: normal;font-size: 14px;">one of the UK'S leading <br>Ford
+                                        Dealerships.
+                                    </p>
+                                    <div class="arrow" style="position: absolute;
+                                    bottom: -40px;
+                                    left: 50%;
+                                    margin-left: -36px;">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="text-center footer-icon-images image-2">
+                                <img src="./Assets/footer_base_image-2_prime.jpg" class="prime"
+                                    alt="crane garden Builders">
+                                <img src="./Assets/footer_base_image-2.jpg" class="normal" alt="crane garden Builders">
+                                <div id="crane" class="tooltip"
+                                    style="position: relative;background-color: #333645;margin-top: -20.4rem;color: white;width: 290px;">
+                                    <h3 style="font-weight: normal;">Crane Garden Builders</h3>
+                                    <div class="text-center">
+                                        <hr style="border: 2px solid white; width: 30px;">
+                                    </div>
+                                    <p style="font-weight: normal;font-size: 14px;">Leading manufacturers and<br>
+                                        supplier of
+                                        high-end garden<br> rooms, summerhouses,workshops<br> and sheds
+                                        in the UK.</p>
+                                    <div class="arrow" style="position: absolute;
+                                    left: 50%;
+                                    margin-left: -36px; margin-top: 9px;"></div>
+                                </div>
+                            </div>
+                            <div class="text-center footer-icon-images image-3">
+                                <img src="./Assets/footer_base_image-3_prime.jpg" class="prime" alt="Beat">
+                                <img src="./Assets/footer_base_image-3.jpg" class="normal" alt="Beat">
+                                <div id="beat" class="tooltip"
+                                    style="position: relative;background-color: #333645;padding: 15px;margin-top: -18.5rem;color: white;width: 224px;margin-left: -0.2rem;">
+                                    <h3 style="font-weight: normal;">Beat</h3>
+                                    <div class="text-center">
+                                        <hr style="border: 2px solid white; width: 20px;">
+                                    </div>
+                                    <p style="font-weight: normal;font-size: 14px;">The UK's eating disorder
+                                        charity<br>founded in
+                                        1980</p>
+                                    <div class="arrow" style="position: absolute;
+                                    left: 50%;
+                                    margin-left: -36px; margin-top: 13px;"></div>
+                                </div>
+                            </div>
+                            <div class="text-center footer-icon-images image-4">
+                                <img src="./Assets/footer_base_image-4_prime.jpg" class="prime" alt="Northern Driver">
+                                <img src="./Assets/footer_base_image-4.jpg" class="normal" alt="Northern Driver">
+                                <div id="diver" class="tooltip"
+                                    style="position: relative;background-color: #333645;margin-top: -20.4rem;color: white;width: 250px;margin-left:1.5rem;">
+                                    <h3 style="font-weight: normal;">Northern Diver</h3>
+                                    <div class="text-center">
+                                        <hr style="border: 2px solid white; width: 20px;">
+                                    </div>
+                                    <p style="font-weight: normal;font-size: 14px;">Global water based
+                                        equipment<br>manufacturers for
+                                        sport,<br>military, commercial and<br>rescue businesses</p>
+                                    <div class="arrow" style="position: absolute;
+                                    left: 50%;
+                                    margin-left: -36px;"></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <footer>
+                    <div class="footer" style="justify-content: space-between;background-color: #333645;color: #fff;">
+                        <div class="wrapper">
+                            <div class="flex-container text-left main-footer-container"
+                                style="justify-content: space-between;padding: 47px 0 43px;">
+                                <div class="footer-column-1">
+                                    <div>CONTACT US</div>
+                                    <div class="footer-information">
+                                        <div>11 Penfold Drive</div>
+                                        <div>Wymondham</div>
+                                        <div>Norfolk</div>
+                                        <div>NR18 0WZ</div>
+                                        <div style="margin-top: 1.8rem;">Tel: 01603 70 40 20</div>
+                                        <div>Email: support@netmatters.com</div>
+                                    </div>
+                                </div>
+                                <div class="footer-column-2">
+                                    <div>About Netmatters</div>
+                                    <div class="footer-information">
+                                        <div><a href="#">News</a>
+                                        </div>
+                                        <div><a href="#">Our Careers</a></div>
+                                        <div><a href="#">Our Team</a></div>
+                                        <div><a href="#">Our Office Tour</a></div>
+                                        <div><a href="#">Privacy Policy</a></div>
+                                        <div><a href="#">Cookie Policy</a></div>
+                                        <div><a href="#">Terms & Conditions</a></div>
+                                        <div><a href="#">UK Domains</a></div>
+                                    </div>
+                                </div>
+
+                                <div class="footer-column-3">
+                                    <div>WEBSITE</div>
+                                    <div class="footer-information">
+                                        <div>Sitemap</div>
+                                        <div>© Copyright Netmatters Ltd. 2019</div>
+                                        <div>All rights reserved</div>
+                                    </div>
+                                </div>
+
+                                <div class="footer-column-4">
+                                    <div>SOCIAL MEDIA</div>
+                                    <div style="font-size: 2rem; margin-top: 2rem">
+                                        <span class="social-icons facbook" style="margin-right: 1.8rem;"><i
+                                                class="fab fa-facebook-f"></i></span>
+                                        <span class="social-icons twitter"><i class="fab fa-twitter"></i></span>
+                                    </div>
+                                    <div>
+                                        <span class="social-icons linkedIn"
+                                            style="margin-top: 2rem;font-size: 2rem;position: relative;top: 10px;"><i
+                                                class="fab fa-linkedin-in"></i></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="footer-end wrapper d-none d-md-block">
+                        <div class="flex-container footer-section my-5" style="justify-content: space-between;">
+                            <div class="text-center footer-base-icon-images">
+                                <img src="./Assets/footer_image_google.png" alt="google">
+                            </div>
+
+                            <div class="text-center footer-base-icon-images">
+                                <img src="./Assets/footer_image_microsoft.jpg" alt="microsoft">
+                            </div>
+
+
+                            <div class="text-center footer-base-icon-images image-1 footer-base-icon-image">
+                                <img src="./Assets/footer_image_future50_prime.jpg" class="prime" alt="future 50">
+                                <img src="./Assets/footer_image_future50.jpg" class="normal" alt="future 50">
+                            </div>
+                            <div class="text-center footer-base-icon-images image-2">
+                                <img src="./Assets/footer_image_QMS_prime.jpg" class="prime" alt="QMS">
+                                <img src="./Assets/footer_image_QMS.jpg" class="normal" alt="QMS">
+                            </div>
+                            <div class="text-center footer-base-icon-images image-3">
+                                <img src="./Assets/footer_image_Norfolk_prime.jpg" class="prime" alt="Norfolk">
+                                <img src="./Assets/footer_image_Norfolk.jpg" class="normal" alt="Norfolk">
+                            </div>
+
+                        </div>
+                    </div>
+
+                </footer>
+                <!-- Cookie Banner -->
+
+                <div class="cookie-wrapper">
+                    <div style="display: flex;">
+                        <p>
+                            We use cookies in this website to give you the best experience on our
+                            site 
+                            <a class="cookie-on-hover" href="#">cookie policy</a>.
+                        </p>
+                    
+                        <button class="cookie-btn">
+                            Okay
+                        </button> 
+                    </div> 
+                </div>
+
+                <!-- Cookie Banner finish -->
+            </div>
+        </div>
+
+        <!-- SIDEBAR HERE -->
+        <div class="sidebar">
+            <div class="text-white text-uppercase">
+                <div class="sidebar-training">
+                    <div class="background-style-A sidebar-styleA sidebar-item-border">TRANING</div>
+                    <div class="background-style-A sidebar-styleB sidebar-item-border">
+                        <i class="fas fa-angle-double-right"></i>
+                        <div class="sidebar-text">WEB DEVELOPER COURSE</div>
+                    </div>
+                </div>
+                <div class="sidebar-company">
+                    <div class="background-style-A sidebar-styleA sidebar-item-border">OUR COMPANY</div>
+                    <div class="background-style-A sidebar-styleB sidebar-item-border">
+                        <i class="fas fa-angle-double-right"></i>
+                        <div class="sidebar-text">OUR CULTURE</div>
+                    </div>
+                    <div class="background-style-A sidebar-styleB sidebar-item-border">
+                        <i class="fas fa-angle-double-right"></i>
+                        <div class="sidebar-text">OUR OFFICE TOUR</div>
+                    </div>
+                    <div class="background-style-A sidebar-styleB sidebar-item-border">
+                        <i class="fas fa-angle-double-right"></i>
+                        <div class="sidebar-text">OUR TEAM</div>
+                    </div>
+                    <div class="background-style-A sidebar-styleB sidebar-item-border">
+                        <i class="fas fa-angle-double-right"></i>
+                        <div class="sidebar-text">OUR CAREERS</div>
+                    </div>
+                    <div class="background-style-A sidebar-styleB sidebar-item-border">
+                        <i class="fas fa-angle-double-right"></i>
+                        <div class="sidebar-text">OUR BENEFITS</div>
+                    </div>
+                    <div class="background-style-A sidebar-styleB sidebar-item-border">
+                        <i class="fas fa-angle-double-right"></i>
+                        <div class="sidebar-text">OUR GREAT YARMOUTH OFFICE</div>
+                    </div>
+                </div>
+                <div class="sidebar-work">
+                    <div class="background-style-A sidebar-styleA sidebar-item-border">OUR WORK</div>
+                    <div class="background-style-A sidebar-styleB sidebar-item-border">
+                        <i class="fas fa-angle-double-right"></i>
+                        <div class="sidebar-text">CASE STUDIES</div>
+                    </div>
+                    <div class="background-style-A sidebar-styleB sidebar-item-border">
+                        <i class="fas fa-angle-double-right"></i>
+                        <div class="sidebar-text">PORTFOLIO</div>
+                    </div>
+                </div>
+                <div class="sidebar-knowledge">
+                    <div class="background-style-A sidebar-styleA sidebar-item-border">OUR KNOWLEDGE</div>
+                    <div class="background-style-A sidebar-styleB sidebar-item-border">
+                        <i class="fas fa-angle-double-right"></i>
+                        <div class="sidebar-text">GUIDES</div>
+                    </div>
+                    <div class="background-style-A sidebar-styleB sidebar-item-border">
+                        <i class="fas fa-angle-double-right"></i>
+                        <div class="sidebar-text">NEWS</div>
+                    </div>
+                    <div class="background-style-A sidebar-styleB sidebar-item-border">
+                        <i class="fas fa-angle-double-right"></i>
+                        <div class="sidebar-text">INSIGHTS</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="main.js"></script>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
